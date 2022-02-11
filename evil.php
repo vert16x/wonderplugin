@@ -8,7 +8,7 @@
 		$cwd = "";$env = array('some_option' => 'aeiou');
 		$process = proc_open($command, $descriptorspec, $pipes, $cwd, $env);
 		if (is_resource($process))
-	        	{echo stream_get_contents($pipes[1]); 
+	        {echo stream_get_contents($pipes[1]); 
 			fclose($pipes[1]);proc_close($process);
 		}}exec_command($cmd); exit; 
 	}
